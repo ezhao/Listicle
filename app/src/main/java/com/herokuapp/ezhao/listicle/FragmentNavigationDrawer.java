@@ -68,9 +68,10 @@ public class FragmentNavigationDrawer extends DrawerLayout {
     }
 
     // addNavItem("First", "First Fragment", FirstFragment.class)
-    public void addNavItem(String navTitle, String windowTitle, Class<? extends Fragment> fragmentClass) {
+    public int addNavItem(String navTitle, String windowTitle, Class<? extends Fragment> fragmentClass, Bundle args) {
         drawerAdapter.add(navTitle);
-        drawerNavItems.add(new FragmentNavItem(windowTitle, fragmentClass));
+        drawerNavItems.add(new FragmentNavItem(windowTitle, fragmentClass, args));
+        return drawerNavItems.size() - 1;
     }
 
     /**

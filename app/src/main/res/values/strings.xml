@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Listicle</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_add">Add Listicle</string>
+    <string name="action_edit">Edit Name</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
+    <string name="submit">Submit</string>
+    <string name="new_item_hint">New list item</string>
 </resources>
